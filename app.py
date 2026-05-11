@@ -135,7 +135,7 @@ def gemini_param():
     try:
         client = genai.Client(api_key=api_key)
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-1.5-flash",
             contents=tt
         )
         result_text = response.text if response.text else "응답이 비어 있습니다."
